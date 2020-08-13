@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎注册"
+        android:textSize="@dimen/title_size"
+        android:textColor="#000000"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="@dimen/layout_marginLeft"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/layout_marginLeft">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="已有帐号？"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="登录"
+            android:textSize="18sp"
+            android:textColor="@color/severItems" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp">
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="38dp"
+            android:text="用户名"
+            android:textSize="@dimen/large_size"
+            android:gravity="center"
+            android:textColor="#333"/>
+        <EditText
+            android:id="@+id/register_account"
+            android:layout_width="225dp"
+            android:layout_height="38dp"
+            android:hint="   请设置用户名"
+            android:background="@drawable/et_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="38dp"
+            android:text="手机号"
+            android:textSize="@dimen/large_size"
+            android:gravity="center"
+            android:textColor="#333"/>
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="225dp"
+            android:layout_height="38dp"
+            android:hint="   用于登录和找回密码"
+            android:background="@drawable/et_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="38dp"
+            android:text="密  码"
+            android:textSize="@dimen/large_size"
+            android:gravity="center"
+            android:textColor="#333"/>
+        <EditText
+            android:id="@+id/register_pwd"
+            android:layout_width="225dp"
+            android:layout_height="38dp"
+            android:hint="   请设置登陆密码"
+            android:background="@drawable/et_background" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="38dp"
+            android:text="验证码"
+            android:textSize="@dimen/large_size"
+            android:gravity="center"
+            android:textColor="#333"/>
+        <EditText
+            android:id="@+id/register_edittext_verify"
+            android:layout_width="130dp"
+            android:layout_height="38dp"
+            android:hint="   请输入验证码"
+            android:background="@drawable/et_background" />
+        <Button
+            android:id="@+id/register_btn_verify"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:text="获取验证码"
+            android:background="@drawable/et_background"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_submit"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:text="提    交"
+        android:textSize="@dimen/large_size"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/login_verify_shape"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="18dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp">
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/choose"
+            android:layout_marginLeft="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="登录即表示已阅读并同意"
+            android:textSize="@dimen/small_size"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/sever_items"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="《用户服务条款》"
+            android:textSize="@dimen/small_size"
+            android:textColor="@color/severItems"/>
+    </LinearLayout>
+</LinearLayout>
